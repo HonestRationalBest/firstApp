@@ -1,0 +1,16 @@
+.nav {
+  background: #5b58e8;
+  color: white;
+  width: 250px;
+  height: 936px;
+  border-radius: 0 0 70px 0;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.active {
+  font-size: 1.275em;
+  text-decoration: underline;
+}

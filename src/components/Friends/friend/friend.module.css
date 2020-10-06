@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 929px;
+  height: 124px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.img {
+  margin-left: 35px;
+  margin-right: 11px;
+  width: 80px;
+  height: 80px;
+  background: rosybrown;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.text_wrapper {
+  float: right;
+  font-size: 0.8em;
+}
+
+.text_wrapper h3 {
+  margin-bottom: 0px;
+}

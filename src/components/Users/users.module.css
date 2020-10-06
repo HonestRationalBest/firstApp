@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  width: 925px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 925px;
+}
+
+.flex_start {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  align-items: center;
+}
+
+.margin {
+  margin-right: 210px;
+}
+
+.wrapper img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 0px;
+}
+
+.wrapper h5 {
+  margin-bottom: 17px;
+}
+
+.wrapper p {
+  margin-top: 10px;
+}
+
+.wrapper button {
+  width: 152px;
+  background: #8577e0;
+  border: none;
+  padding: 6px 0px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-left: 160px;
+}

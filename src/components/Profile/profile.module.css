@@ -1,0 +1,50 @@
+.content_img {
+  background-image: url(./img/profile_img.png);
+  width: 960px;
+  margin-left: 15px;
+  height: 140px;
+}
+
+.content_avatar {
+  height: 465px;
+  width: 310px;
+  background-image: url(./img/avatar.png);
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.content_text {
+  width: 542px;
+  margin-left: 25px;
+}
+
+.content_avatar_wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content_posts {
+  margin-left: 40px;
+  padding-bottom: 142px;
+}
+
+.content_posts h2 {
+  text-align: center;
+}
+
+.post_place {
+  border: 1px solid black;
+  height: 70px;
+  width: 935px;
+  font-size: 1em;
+}
+
+.post_button {
+  font-size: 1em;
+  margin-top: 40px;
+  float: right;
+  width: 160px;
+  padding: 7px 0px;
+  background: #a0b5ff;
+  border: none;
+}

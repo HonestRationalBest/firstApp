@@ -1,0 +1,28 @@
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.button_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 629px;
+  height: 66px;
+  border-radius: 30px;
+  align-items: center;
+  background: #8577e0;
+}
+img {
+  width: 26px;
+  height: 27px;
+  margin-left: 27px;
+  margin-right: 11px;
+}
+
+.input {
+  width: 538px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.85em;
+  padding-left: 13px;
+}
