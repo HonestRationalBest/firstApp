@@ -1,12 +1,15 @@
 import React from "react";
 import style from "./profile.module.css";
 import Post from "./posts/post";
-import {
-  addPostActionCreater,
-  onPostChangeActionCreater,
-} from "../../redux/profile-reducer";
+import preloader from "../Users/img/200.gif"
 
 const Profile = (props) => {
+  
+if(!props.profile){
+  return(
+  <div><img alt="none" src={preloader}/></div>)
+}
+
   const elPost = props.posts.map((el) => (
     <Post name={el.name} post={el.post} />
   ));
@@ -22,22 +25,14 @@ const Profile = (props) => {
     let text = newPostEl.current.value;
     props.onPostChange(text);
   };
-
   return (
     <div className={style.profile}>
       <div className={style.content_img}></div>
       <div className={style.content_avatar_wrapper}>
-        <div className={style.content_avatar}></div>
+        <img className={style.content_avatar} src={props.profile.photos.large} alt="none"/>
         <div className={style.content_text}>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing
-          </p>
+          <p className={style.bolt}>{props.profile.fullName}</p>
+          <p>{props.profile.aboutMe}</p>
         </div>
       </div>
       <div className={style.content_posts}>
@@ -54,7 +49,7 @@ const Profile = (props) => {
         </button>
       </div>
       {elPost}
-    </div>
+      </div>
   );
 };
 

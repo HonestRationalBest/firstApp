@@ -14,6 +14,7 @@ let initialState = {
     },
   ],
   newPost: "",
+  profile: undefined
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -30,19 +31,28 @@ const profileReducer = (state = initialState, action) => {
     case "UPDATE-POST":
       stateCopy.newPost = action.newText;
       return stateCopy;
+    case "SET_USER_PROFILE":
+      return{...state, profile: action.profile}
     default:
       return stateCopy;
   }
 };
 
-export const addPostActionCreater = (name) => {
+export const addPost = (name) => {
   return { type: "ADD-POST", user: name };
 };
 
-export const onPostChangeActionCreater = (text) => {
+export const onPostChange = (text) => {
   return {
     type: "UPDATE-POST",
     newText: text,
+  };
+};
+
+export const setUserProfile = (profile) => {
+  return {
+    type: "SET_USER_PROFILE",
+    profile
   };
 };
 
